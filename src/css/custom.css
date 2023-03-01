@@ -3,28 +3,71 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-
+:root {
+  --color-0-raw: 0, 0, 0;
+  --color-05-raw: 11, 11, 11;
+  --color-10-raw: 22, 22, 22;
+  --color-90-raw: 233, 233, 233;
+  --color-95-raw: 244, 244, 244;
+  --color-100-raw: 255, 255, 255;
+  --color-primary-default-raw: 89, 0, 189;
+  --color-primary-accent-raw: 125, 77, 180;
+  --color-primary-highlight-raw: 220, 180, 255;
+  --color-interactive-default-raw: 192, 0, 96;
+  --color-interactive-accent-raw: 255, 255, 255;
+  --color-interactive-highlight-raw: 197, 64, 0;
+  --color-background-raw: 29, 188, 169;
+  --color-background-accent-raw: 32, 55, 70;
+  --color-magenta-raw: 244, 36, 161;
+  --color-fixed-lilac-raw: 220, 180, 255;
+  --color-fixed-purple-raw: 89, 0, 189;
+  --color-fixed-orange-raw: 197, 64, 0;
+  --color-fixed-black-raw: 0, 0, 0;
+  --color-fixed-white-raw: 255, 255, 255;
+  --color-0: rgb(var(--color-0-raw));
+  --color-05: rgb(var(--color-05-raw));
+  --color-10: rgb(var(--color-10-raw));
+  --color-90: rgb(var(--color-90-raw));
+  --color-95: rgb(var(--color-95-raw));
+  --color-100: rgb(var(--color-100-raw));
+  --color-magenta: rgb(var(--color-magenta-raw));
+  --color-primary-default: rgb(var(--color-primary-default-raw));
+  --color-primary-accent: rgb(var(--color-primary-accent-raw));
+  --color-primary-highlight: rgb(var(--color-primary-highlight-raw));
+  --color-interactive-default: rgb(var(--color-interactive-default-raw));
+  --color-interactive-accent: rgb(var(--color-interactive-accent-raw));
+  --color-interactive-highlight: rgb(var(--color-interactive-highlight-raw));
+  --color-background: rgb(var(--color-background-raw));
+  --color-background-accent: rgb(var(--color-background-accent-raw));
+  --color-fixed-purple: rgb(var(--color-fixed-purple-raw));
+  --color-fixed-lilac: rgb(var(--color-fixed-lilac-raw));
+  --color-fixed-orange: rgb(var(--color-fixed-orange-raw));
+  --color-fixed-black: rgb(var(--color-fixed-black-raw));
+  --color-fixed-white: rgb(var(--color-fixed-white-raw));
+}
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: var(--color-primary-default);
+  --ifm-color-primary-dark: var(--color-primary-default);
+  --ifm-color-primary-darker: var(--color-primary-default);
+  --ifm-color-primary-darkest: var(--color-primary-default);
+  --ifm-color-primary-light: var(--color-primary-highlight);
+  --ifm-color-primary-lighter: var(--color-primary-highlight);
+  --ifm-color-primary-lightest: var(--color-primary-highlight);
+  --ifm-footer-link-hover-color: var(--color-primary-highlight);
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: var(--color-primary-highlight);
+  --ifm-color-primary-dark: var(--color-interactive-default);
+  --ifm-color-primary-darker: var(--color-interactive-default);
+  --ifm-color-primary-darkest: var(--color-interactive-default);
+  --ifm-color-primary-light: var(--color-primary-highlight);
+  --ifm-color-primary-lighter: var(--color-primary-highlight);
+  --ifm-color-primary-lightest: var(--color-primary-highlight);
+  --ifm-footer-link-hover-color: var(--color-primary-highlight);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }

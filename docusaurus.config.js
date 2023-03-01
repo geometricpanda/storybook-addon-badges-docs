@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Badges',
-  tagline: 'Another Storybook Addon',
+  tagline: 'Yet Another Storybook Addon',
   favicon: 'img/badges-icon.png',
   url: 'https://geometricpanda.github.io/',
   baseUrl: '/storybook-addon-badges/',
@@ -79,12 +79,8 @@ const config = {
                 to: '/docs/category/getting-started',
               },
               {
-                label: 'Advanced',
-                to: '/docs/category/advanced',
-              },
-              {
-                label: 'Tips',
-                to: '/docs/category/tips',
+                label: 'Customising Badges',
+                to: '/docs/category/customising-badges',
               },
             ],
           },
