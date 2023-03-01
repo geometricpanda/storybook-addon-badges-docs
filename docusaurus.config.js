@@ -9,8 +9,8 @@ const config = {
   title: 'Badges',
   tagline: 'Another Storybook Addon',
   favicon: 'img/badges-icon.png',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://geometricpanda.github.io/',
+  baseUrl: '/storybook-addon-badges/',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'geometricpanda', // Usually your GitHub org/user name.
@@ -97,7 +97,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/geometricpanda/storybook-addon-docs',
+                href: 'https://github.com/geometricpanda/storybook-addon-badges',
               },
             ],
           },
