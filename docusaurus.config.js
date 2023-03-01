@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Badges',
   tagline: 'Yet Another Storybook Addon',
-  favicon: 'img/badges-icon.png',
+  favicon: 'img/badges-icon.svg',
   url: 'https://geometricpanda.github.io/',
   baseUrl: '/storybook-addon-badges/',
   // GitHub pages deployment config.
@@ -52,7 +52,7 @@ const config = {
         title: 'Storybook Addon Badges',
         logo: {
           alt: 'Storybook Addon Badges Logo',
-          src: 'img/badges-icon.png',
+          src: 'img/badges-icon.svg',
         },
         items: [
           {
